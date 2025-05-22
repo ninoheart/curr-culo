@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Seti Currículo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css">
+  <title>Site Acessível Completo</title>
+  
+
+</head>
+<body>
+
+
+  <!--Cabeçalho do meu site-->
+    <header>
+      
+      <nav class="menu">
+        <div class="celular"> &#9776 </div>
+        <ul>
+          <li> <img src="logo.png" alt="" width="60" class="logo"></li>
+          <li> <a href="#inicio"> Informações pessoas</a></li>
+          <li> <a href="#endereço"> Endereço</a></li>
+          <li> <a href="#foracao"> Formação</a></li>
+          <li> <a href="#contato"> Contato</a></li>
+          <li> <a href="#redes"> Redes</a></li>
+          <li> <a href="#informaçoes"> Informações</a></li>
+
+          <li><button onclick="mudarTamanhoFonte(1)">A+</button></li>
+          <li><button onclick="mudarTamanhoFonte(-1)">A-</button></li>
+	        <li><button onclick="toggleContrast()">Contraste</button></li>
+          <li><button onclick="lerTexto()">🔊 Ler Página</button></li>
+          <li><button onclick="resetAcessibilidade()">Resetar</button></li>
+
+        </ul>
+      </nav>
+    </header>
+    
+
+<section id="inicio">
+ 
+    <h2> APARECIDO DA SILVA JUNOR</h2>
+  <h1>
+    <p> montador</p>
+  </h1>
+  <img id="perfil" 
+         src="https://i.gifer.com/origin/e6/e6986098783dbc8338f3e4dfdfb67b34.gif" width="250"> 
+
+
+</section>
+
+<section id="informacao">
+
+      <h3 class="titulo">INFORMAÇÕES PESSOAS</h3>
+
+        <ul class="informacoes">
+
+          <li> Telefone: 999503468</li>
+          <li> Email: ninojunior07@outlook.com</li>
+
+        </ul>
+</section>
+
+<section id="endereço">
+      <h3 class="titulo"> Endereço</h3>
+
+          <ul class="informacoes">
+            <li> Av. Pará</li>
+            <li> Numero: 69</li>
+            <li> Bairro: centor</li>
+          </ul>
+
+</section>
+
+<section id="formacao">
+
+      <h3 class="titulo"> Formação </h3>
+
+        <ul class="informacoes">
+
+          <li> Colégio Estadual Princesa Isabel</li>
+          <li> Completo</li>
+          <li> Fazento Curso De Programação De web</li>
+
+        </ul>
+</section>
+
+<section id="redes">
+      <h3 class="titulo"> Redes Sociais</h3>
+
+        <ul class="informacoes">
+
+          <li> <a target="_blank" href="https://g1.globo.com/"><i class="fa-solid fa-earth-americas"></i>facebook</a> </li>
+          <li> <a target="_blank" href="#"><i class="fa-solid fa-link"></i> Linkedin </a></l>
+          <li> <a target="_blank" href="instagram"><i class="fa-solid fa-camera"></i> Instagram </a></li>
+          <li> <a target="_blank" href="http://wa.me/+5544999503468"><i class="fa-solid fa-gamepad"></i> Whatsapp </a></li>
+          <li> <a target="_blank" href="sobre.html"><i class="fa-solid fa-newspaper"></i> Sobre </a></li>
+          <li> <a target="_blank" href="https://www.youtube.com/watch?v=j5yHx1glfCY"><i class="fa-solid fa-seedling"></i> Etc.. </a></li>
+          
+          
+        </ul>
+</section>
+  <main id="conteudo" tabindex="0" aria-label="Conteúdo principal da página">
+    <h1>Bem-vindo ao site acessível</h1>
+    <p>Este site possui algumas ferramentas para tornar a navegação mais inclusiva.</p>
+    <a href="#" aria-label="Ir para página de contato">Página de Contato</a>
+  </main>
+
+  <footer class="rodape">
+      <p> Criado por <b> Aparecido </b> 2025</p>
+      <cite> Todos os direitos reservados</cite>
+      <br>
+      <progress></progress>
+  </footer>
+  
+   <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

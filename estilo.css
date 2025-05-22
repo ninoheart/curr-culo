@@ -1,0 +1,183 @@
+body {
+    /*alrera a cor de fundo*/
+    background-color: rgba(2, 154, 255, 0.836);
+    /*alimha texto no centro*/
+    text-align:center;
+    /* background-image: url("https://lh6.googleusercontent.com/proxy/XsqvB6zsjJoex4ZHju84qlV3ezziy4OYBYPt-z1j-czrGbQ8-79ZJ4q-Rluk_1pHOpUw6l2WLRFdTQ8j4C3lnPy1nrJmYvweSWlfRQGIxklUqMqYdVrMMKwLY-E5F3s_NQNUgthUKI9Xiw"); */
+    background-size: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;
+      }
+
+    
+      body {
+     
+    .high-contrast {
+      background-color: black !important;
+      color: yellow !important;
+    
+    }
+    .grayscale {
+      filter: grayscale(100%) !important;
+    }
+    .daltonismo {
+      filter: hue-rotate(90deg);
+    }
+    
+    button {
+      margin: -100px;
+      padding: 5px 10px;
+    }
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+    a:focus, button:focus {
+      outline: 3px solid #00f;
+    }
+  }
+
+section{
+    background-color: rgba(198, 19, 221, 0.473);
+    width: 250px;
+    margin: auto;
+    border-radius: 90px;
+    color: rgb(69, 231, 20);
+    /*espaçamento interno*/
+    padding: 100px;
+    /*espaçamento externp*/
+    margin-top: 60px;
+    /*sombra*/
+    box-shadow: 50px 50px 500px rgb(15, 138, 175);
+    /* animation: animacao 1s alternate infinite; */
+}
+
+@keyframes animacao{
+    0%{
+        box-shadow: 2px 2px 10px red;
+        transform: rotate(90deg);
+    }
+    25%{
+        box-shadow: 2px 2px 8px olivedrab ;
+        transition: traslateX(-100px);
+    }
+    50%{
+        box-shadow: 2px 2px 8px yellow;
+        transform: translateY(100px);
+    }
+    75%{box-shadow: 2px 2px 8px green;}
+    100%{box-shadow: 2px 2px 20px blue;}
+}
+
+
+
+/*trabalhando com class ( personalizar muitos)*/
+.titulo{
+    color: blue;
+    text-shadow: 2px 2px 2px;
+
+}
+/*trabalhando com id (personalizar)*/
+.perfil{
+    border-radius: 50px;
+    width: 500px;
+    border: 20px solid grey;
+
+}
+.informacoes{
+    list-style: none;
+    text-align: left;
+}
+section:hover{
+    background-color: rgba(29, 7, 82, 0.87);
+    transition: 2s;
+    font-size: 25px;
+}
+/*persanlizar menu*/                            
+.menu{
+    background-color: rgb(15, 12, 228);                /*corde fundo do menu*/
+    border-radius: 20px;                      /*arredodar bordas do menu*/
+}
+/*deixar lista de lado  a lado*/
+.menu ul li {
+    display: inline-block;                  /*colocar opções de listado menu lado a lado*/
+    padding: 10px;                          /*espaçamento interno*/
+    width: 170px;                           /*largura do botão do menu*/
+
+}
+.menu ul li a {
+    color: rgb(28, 231, 21);                     /*cor de letra*/
+    text-decoration:  none;                 /*decoração de link desativada*/
+
+}
+
+.logo{
+    border-radius: 20px;
+    width: 60px;
+}
+
+.rodape{
+    /*cor do rodape*/
+    background-color: rgb(0, 0, 0);
+    /*cor da letra*/
+    color: rgb(127, 14, 233);
+    /*margem de cima*/
+    margin-top: 40px;
+    /*espaçamento interno*/
+    padding-top: 20px;
+
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+}
+#redes ul li a{
+    color: rgb(63, 230, 12);                       /*cor da letra*/
+    text-decoration: none;                /*decoração do texto desativada*/
+}
+.celular{
+    /*desapareça o icone menu na versão desktop*/
+    display: none;
+}
+
+/*definindo configuração do modo celular*/
+@media(max-width: 1050px){
+    .menu ul {
+        display: none;  /*desaparece lista do menu*/
+    }
+    .celular{
+        display: block;   /*aparece menu hamburguer do celular*/
+        text-align: left;
+        padding: 8px;
+        color: white;
+    }
+    ul.mostraMenu{
+        display: inline-block;
+    }
+}
+    .high-contrast {
+      background-color: black !important;
+      color: rgb(250, 250, 0) !important;
+    }
+    .grayscale {
+      filter: grayscale(100%) !important;
+    }
+    .daltonismo {
+      filter: hue-rotate(90deg);
+    }
+   
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+    }
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+    a:focus, button:focus {
+      outline: 3px solid #00f;
+    }
+    
